@@ -25,6 +25,6 @@ import { FIREBASE_CONFIG } from './firebase.credentials';
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     ShoppingListService
-  ]
+  ],
 })
 export class AppModule {}
