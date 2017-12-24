@@ -6,6 +6,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule} from 'angularfire2/database';
 
+import { ToastService } from './../services/toast/toast.service';
 import { ShoppingListService } from './../services/shopping-list/shopping-list.service';
 import { MyApp } from './app.component';
 import { FIREBASE_CONFIG } from './firebase.credentials';
@@ -24,7 +25,8 @@ import { FIREBASE_CONFIG } from './firebase.credentials';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    ShoppingListService
+    ShoppingListService,
+    ToastService,
   ],
 })
 export class AppModule {}
